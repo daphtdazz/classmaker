@@ -6,7 +6,6 @@ Make complex classes avoiding metaclass conflicts.
 
 Python sometimes cops out of building a class when you were intuitively expecting there to be no problems. The classic situation is as follows:
 
-    >>> from six import add_metaclass
     >>> class MetaClassA(type):
     ...     pass
 
