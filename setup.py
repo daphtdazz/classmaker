@@ -23,6 +23,7 @@ setup(
     extras_require={
         'develop': [
             "flake8>=3.2.1",
+            "pytest"
         ],
         'docs': [
         ],
