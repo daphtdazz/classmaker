@@ -13,12 +13,10 @@ Python sometimes cops out of building a class when you were intuitively expectin
     >>> class MetaClassB(type):
     ...     pass
 
-    >>> @add_metaclass(MetaClassA)
-    ... class BaseClassA:
+    >>> class BaseClassA(metaclass=MetaClassA):
     ...     pass
 
-    >>> @add_metaclass(MetaClassB)
-    ... class BaseClassB:
+    >>> class BaseClassB(metaclass=MetaClassB):
     ...     pass
 
     >>> class MyClass(BaseClassA, BaseClassB):
