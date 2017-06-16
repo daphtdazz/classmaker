@@ -19,5 +19,5 @@ script:
   - flake8
   - py.test test.py
   - if [[ $(python -V) =~ 3\.[0-9]\. ]] ;
-    then py.test --doctest-glob='*.md' ;
+    then PYTHONPATH=. py.test --doctest-glob='*.md' ;
     fi
