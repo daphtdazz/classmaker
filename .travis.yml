@@ -18,4 +18,4 @@ install:
 script:
   - flake8
   - py.test test.py
-  - py.test --doctest-glob='*.md'
+  - PYTHONPATH=. py.test --doctest-glob='*.md'
